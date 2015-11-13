@@ -1,10 +1,14 @@
 # SQL Joins
 
+## Overview
+
+We'll discuss how to retrieve specific sets of data from associated tables using SQL join statements. 
+
 ## Objectives
 
-1. Define SQL joins and understand when and why to use them.
+1. Describe how SQL join clauses combine data from multiple tables based on a common column between them
 2. Define the different types of SQL joins: inner, outer, left outer, right outer
-3. Practice writing join statements. 
+3. Practice writing join statements
 
 ## What Is a JOIN?
 
@@ -274,7 +278,7 @@ name             breed            name
 Maru             Scottish Fold    mugumogu  
 Hana             Tabby            mugumogu  
 Nona             Tortoiseshell    Sophie    
-   											   Penny
+ 											                      Penny
 ```
 
 Notice that Lil' Bub is once again missing, but our cat-less owner, Penny, is present and accounted for. That is because the RIGHT OUTER JOIN will select *all* of the data from the second table and only the matched data from the first table. 
@@ -315,4 +319,4 @@ Lil' Bub         perma-kitten
                                   Penny               
 ```
 
-Our result includes both cats without owners and owners without cats, in other words, it includes *all* of our data. 
+Our result includes both cats without owners and owners without cats. In other words, it includes *all* of our data. 

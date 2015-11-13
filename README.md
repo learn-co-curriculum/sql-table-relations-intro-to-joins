@@ -278,7 +278,7 @@ name             breed            name
 Maru             Scottish Fold    mugumogu  
 Hana             Tabby            mugumogu  
 Nona             Tortoiseshell    Sophie    
- 											                      Penny
+                                  Penny  
 ```
 
 Notice that Lil' Bub is once again missing, but our cat-less owner, Penny, is present and accounted for. That is because the RIGHT OUTER JOIN will select *all* of the data from the second table and only the matched data from the first table. 

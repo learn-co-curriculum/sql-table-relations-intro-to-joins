@@ -320,3 +320,5 @@ Lil' Bub         perma-kitten
 ```
 
 Our result includes both cats without owners and owners without cats. In other words, it includes *all* of our data. 
+
+<a href='https://learn.co/lessons/sql-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>

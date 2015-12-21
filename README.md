@@ -44,7 +44,7 @@ For this code-along, we'll be working with a database of pets and owners. Let's 
 * Create your database in your terminal with the following command:
 
 ```sql
-sqlite3 pets_database.rb
+sqlite3 pets_database.db
 ```
 
 * Now, inside the `sqlite3>` prompt, create the following tables and insert the values:

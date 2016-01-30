@@ -115,7 +115,7 @@ This may not make sense to you just yet. Let's try it out with our own database 
 
 ### Writing INNER JOINs
 
-Enter into your database via `sqlite3 pets_database.rb`, if you're not there already. Let's write an INNER JOIN query that will return the name and breed of the cat along with the name of that cat's owner.
+Enter into your database via `sqlite3 pets_database.db`, if you're not there already. Let's write an INNER JOIN query that will return the name and breed of the cat along with the name of that cat's owner.
 
 ```sql
 SELECT Cats.name, Cats.breed, Owners.name 
@@ -321,4 +321,6 @@ Lil' Bub         perma-kitten
 
 Our result includes both cats without owners and owners without cats. In other words, it includes *all* of our data. 
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme' title='SQL Joins'>SQL Joins</a> on Learn.co and start learning to code for free.</p>
+<a href='https://learn.co/lessons/sql-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>

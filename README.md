@@ -242,7 +242,7 @@ Here, our LEFT OUTER JOIN has returned to us *all* of the cats (including Lil' B
 
 The RIGHT OUTER JOIN is the reverse of the LEFT OUTER JOIN. It will return *all* data from the right, or second, table and the matched data from the left, or first table. 
 
-Let's take a look a boiler-plate LEFT OUTER JOIN query:
+Let's take a look a boiler-plate RIGHT OUTER JOIN query:
 
 ```sql
 SELECT column_name(s)

@@ -17,7 +17,7 @@ A SQL JOIN clause is a way to combine rows from two or more tables, based on a c
 Let's say, for example, we have two tables, a Cats table and an Owners table. Cats and owners are associated by a foreign key of `owner_id` in the Cats table. How would we craft a query that would grab us all of the cats with a particular owner, and even include information about that owner in the data returned to us by that query? We know how to write a `SELECT` statement that gets us all of the cats with a particular `owner_id`. For example:
 
 ```sql
-SELECT * FROM cats WHERE owner_id = 2
+SELECT * FROM cats WHERE owner_id = 2;
 ```
 
 This would return us the appropriate list of cats. But what if we wanted to query *both* the Cats and the Owners tables and return information about both cats and owners? This is where JOIN statements come in. 
@@ -324,3 +324,5 @@ Our result includes both cats without owners and owners without cats. In other w
 <a href='https://learn.co/lessons/sql-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>

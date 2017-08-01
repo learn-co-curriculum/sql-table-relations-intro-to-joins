@@ -148,6 +148,7 @@ name             breed            name
 Maru             Scottish Fold    mugumogu  
 Hana             Tabby            mugumogu  
 Nona             Tortoiseshell    Sophie  
+Lil Bub.          Perma-kitten     Sophie
 ```   
 
 We did it! We wrote an INNER JOIN query that returns to us all of the data in the specified columns from both tables. 

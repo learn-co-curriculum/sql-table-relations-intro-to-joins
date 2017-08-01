@@ -109,7 +109,7 @@ Let's take a look at a boiler-plate INNER JOIN statement, before we try it out o
 SELECT column_name(s)
 FROM first_table
 INNER JOIN second_table
-ON first_table.column_name=second_table.column_name;
+ON first_table.column_name = second_table.column_name;
 ```
 This may not make sense to you just yet. Let's try it out with our own database in order to gain a better understanding. 
 
@@ -249,7 +249,7 @@ Let's take a look a boiler-plate RIGHT OUTER JOIN query:
 SELECT column_name(s)
 FROM first_table
 RIGHT JOIN table2
-ON first_table.column_name=second_table.column_name;
+ON first_table.column_name = second_table.column_name;
 ```
 
 Before we (pretend to) write our own RIGHT OUTER JOIN, let's insert a new owner into our Owners table:
@@ -294,7 +294,7 @@ Here's a boiler-plate example:
 SELECT column_name(s)
 FROM first_table
 FULL OUTER JOIN second_table
-ON first_table.column_name=second_table.column_name;
+ON first_table.column_name = second_table.column_name;
 ```
 
 ### Writing FULL OUTER JOINs
@@ -305,7 +305,7 @@ A FULL OUTER JOIN for our Cats and Owners tables would look like this:
 SELECT Cats.name, Cats.breed, Owners.name
 FROM Cats
 FULL OUTER JOIN Owners
-ON Cats.owner_id = Owner.id;
+ON Cats.owner_id = Owners.id;
 ```
 
 It would return:

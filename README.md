@@ -74,7 +74,7 @@ INSERT INTO owners (name) VALUES ("Sophie");
 INSERT INTO cats (name, age, breed, owner_id) VALUES ("Maru", 3, "Scottish Fold", 1);
 INSERT INTO cats (name, age, breed, owner_id) VALUES ("Hana", 3, "Tabby", 1);
 INSERT INTO cats (name, age, breed, owner_id) VALUES ("Nona", 4, "Tortoiseshell", 2);
-INSERT INTO cats (name, age, breed) VALUES ("Lil' Bub", 2, "perma-kitten", 2);
+INSERT INTO cats (name, age, breed) VALUES ("Lil' Bub", 2, "perma-kitten");
 ```
 
 ### A Note on Foreign Keys
@@ -90,10 +90,9 @@ SELECT * FROM cats WHERE owner_id = 2;
 You should see just one cat returned to us, the one that belongs to Sophie, our second owner:
 
 ```sql
-id               name             age         breed	     owner_id        
+id               name             age         breed          owner_id        
 ---------------  ---------------  ----------  -------------  ----------
 3                Nona             4           Tortoiseshell  2
-4                Lil Bub          2           perma-kitten   2
 ```
 
  
@@ -125,30 +124,31 @@ ON Cats.owner_id = Owners.id;
 ```
 
 Let's break this down:
-
-`SELECT Cats.name, Cats.breed, Owners.name ...`
+```sql
+SELECT Cats.name, Cats.breed, Owners.name ...
+```
 
 Here, we are specifying which columns from each table we want to select data from. We use the `table_name.column_name` notation to grab columns from two different tables.
 
 Next up, we join our two tables together with our `INNER JOIN` keyword: 
-
-`...FROM Cats INNER JOIN Owners`
+```sql
+...FROM Cats INNER JOIN Owners
+```
 
 Lastly, we tell our query *how* to connect, or join, the two tables. In other words, we tell our query which columns in each table function as the foreign key/primary key connection. Through this, our query will correctly identify which cat belongs to which owner and return that information accordingly. 
-
-`...ON Cats.owner_id = Owners.id;`
+```sql
+...ON Cats.owner_id = Owners.id;
+```
 
 Here, we are telling our query that the `owner_id` column on the Cats table is filled with data that corresponds to data in the `id` column of the Owners table. We are indicating that a value of `1`, for example, in an individual cat's `owner_id` column refers to the individual owner who has an `id` of `1`. And we are telling our query to return *only* those cats and owners who share this connection.
 
 The above statement should return the following:
-
 ```sql
 name             breed            name
 ---------------  ---------------  ----------
 Maru             Scottish Fold    mugumogu  
 Hana             Tabby            mugumogu  
 Nona             Tortoiseshell    Sophie  
-Lil Bub.          Perma-kitten     Sophie
 ```   
 
 We did it! We wrote an INNER JOIN query that returns to us all of the data in the specified columns from both tables. 
@@ -186,7 +186,6 @@ Our query, therefore, will select all of the appropriate data concerning cats an
 You might have noticed that the data returned by our query did not include Lil' Bub. That's because when we inserted Lil' Bub into our Cats table, we didn't give her an `owner_id`.  
 
 ![](http://readme-pics.s3.amazonaws.com/Lil_Bub_2013_(crop_for_thumb).jpg)
-
 
 Other types of JOIN statements, however, can return such data.  
 
@@ -322,8 +321,4 @@ Lil' Bub         perma-kitten
 
 Our result includes both cats without owners and owners without cats. In other words, it includes *all* of our data. 
 
-<a href='https://learn.co/lessons/sql-joins-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
-
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>

@@ -247,7 +247,7 @@ Let's take a look a boiler-plate RIGHT OUTER JOIN query:
 ```sql
 SELECT column_name(s)
 FROM first_table
-RIGHT JOIN table2
+RIGHT JOIN second_table
 ON first_table.column_name = second_table.column_name;
 ```
 

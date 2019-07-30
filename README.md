@@ -29,7 +29,7 @@ There are several different types of joins that we will cover in this lesson. Th
 | Type | Description |
 |------|-------------|
 | INNER JOIN | Returns all rows when there is at least one match in BOTH tables|
-| LEFT JOIN | Returns all rows from the left table, and the matched rows from the right table|
+| LEFT [OUTER] JOIN | Returns all rows from the left table, and the matched rows from the right table|
 | RIGHT JOIN | Returns all rows from the right table, and the matched rows from the left table |
 | FULL JOIN | Returns all rows when there is a match in ONE of the tables|
 
@@ -204,7 +204,7 @@ Let's take a look at a boiler-plate LEFT OUTER JOIN:
 ```sql
 SELECT column_name(s)
 FROM first_table
-LEFT JOIN second_table
+LEFT [OUTER] JOIN second_table
 ON first_table.column_name=second_table.column_name;
 ```
 

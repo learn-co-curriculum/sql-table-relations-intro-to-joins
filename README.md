@@ -30,10 +30,12 @@ There are several different types of joins that we will cover in this lesson. Th
 |------|-------------|
 | INNER JOIN | Returns all rows when there is at least one match in BOTH tables|
 | LEFT [OUTER] JOIN | Returns all rows from the left table, and the matched rows from the right table|
-| RIGHT JOIN | Returns all rows from the right table, and the matched rows from the left table |
-| FULL JOIN | Returns all rows when there is a match in ONE of the tables|
+| RIGHT JOIN* | Returns all rows from the right table, and the matched rows from the left table |
+| FULL JOIN* | Returns all rows when there is a match in ONE of the tables|
 
+`* Not supported by SQLite`
 
+**Note:** Unfortunately, SQLite does not support the RIGHT JOIN or the FULL OUTER JOIN clauses. However, you can [emulate](http://www.sqlitetutorial.net/sqlite-full-outer-join/) the FULL OUTER JOIN by using the LEFT JOIN clause.
 
 In the following code-along, we'll be crafting JOIN statements of each of the above types in order to return data about a series of connected database tables.
 
@@ -320,5 +322,8 @@ Lil' Bub         perma-kitten
 ```
 
 Our result includes both cats without owners and owners without cats. In other words, it includes *all* of our data. 
+
+## Resources
+* [SQLite FULL OUTER JOIN Emulation](http://www.sqlitetutorial.net/sqlite-full-outer-join/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>

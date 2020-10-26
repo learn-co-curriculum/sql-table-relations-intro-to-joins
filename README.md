@@ -326,4 +326,4 @@ Our result includes both cats without owners and owners without cats. In other w
 ## Resources
 * [SQLite FULL OUTER JOIN Emulation](http://www.sqlitetutorial.net/sqlite-full-outer-join/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/sql-joins-readme'>SQL JOINS</a> on Learn.co and start learning to code for free.</p>
+
